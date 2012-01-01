@@ -1,0 +1,12 @@
+Installation
+---------------------------------------------------
+Download and install the VirtualBox 3.9 from Oracle.
+
+Create a new virtual machine and install the Windows XP into it.
+
+Copy the hook engine file into the C:\system32 folder of the virtual machine.
+
+Install the django platform and deploy the h2sandbox web application with it.
+
+Start the server and enjoy.
+

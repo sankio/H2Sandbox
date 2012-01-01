@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>H2Sandbox | Dynamic Malware Analyzer</title>
+        <link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}main/style.css" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" ></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}main/jquery.blockUI.js" ></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#id_file').change(function(){
+                    $('.fake_one').val($(this).val());
+                });
+                var showWhy = function(){
+                    $(this).slideUp()
+                    $('.reason').append('<p>Due to the nature of h2sandbox, dynamic analysis, the server is usually under heavy load, analysis time can take from 5 minutes to hours. Please be patient</p>');
+                }
+                $('.wait').hide();
+                $('.why').live('click', showWhy);
+                $('#submit_button').click(function() {
+                    $('html').block({
+                        message: $(".wait").html(),
+                        css: { background: '#b5314a url({{ STATIC_URL }}main/waiting_logo.png) 10px 10px no-repeat',
+                            border: '9px solid #8e2337',
+                            color: "#d5d5d5",
+                            width:"620px",
+                            padding:"30px",
+                            lineHeight:"40px"
+                        }
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="menu"></div>
+        <div class="wrapper">
+            <div class="logo"></div>
+        </div>
+
+        <div class="row_one">
+        <form method="POST" action="" enctype="multipart/form-data">
+            <input id="submit_button" type="submit" value="Submit" /> 
+            <div class="fakeinput">
+                {{ form.file }}
+                <div class="fakefile" >
+                    <input class="fake_one"/>                    
+                    <img class="browse" alt="browse" src="{{ STATIC_URL }}/main/button.png" /> 
+                    <div class="clear"></div> 
+                           
+                </div>
+            </div>            
+        </form>
+        </div>
+
+
+        <div class="footer">
+            <div class="footer_nav"><a>Terms</a> | <a>Privacy</a> | <a>About</a></div>
+            <p>Copyright &copy; 2011 H2SandBox Team - VNUHCM IU UNIVERSITY</p>
+        </div>
+        <div class="wait" style="background: #b5314a url({{ STATIC_URL }}main/waiting_logo.png) 10px 10px no-repeat;">
+            <img alt=""  src="{{ STATIC_URL }}main/ajax-loader.gif" /><br/>
+            <a style="color:#d5d5d5;" class="why">why do I have to wait?</a>
+            <div class="reason"></div>
+        </div>
+    </body>
+</html>

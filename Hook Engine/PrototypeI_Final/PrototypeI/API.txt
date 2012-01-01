@@ -1,0 +1,44 @@
+API Log file created at Wed Dec 22 20:21:17 2010
+
+------GetCurrentThreadId -------Wed Dec 22 20:21:25 2010
+
+DWORD : 2
+
+------RegCreateKeyW-------Wed Dec 22 20:21:25 2010
+
+LPCWSTR : Software\Microsoft\Notepad
+
+------GetDateFormatW-------Wed Dec 22 20:21:39 2010
+
+DWORD : 1
+
+LPCWSTR : (null)
+
+------GetTimeFormatW-------Wed Dec 22 20:21:39 2010
+
+DWORD : 2
+
+LPCWSTR : (null)
+
+------RegCreateKeyW-------Wed Dec 22 20:22:20 2010
+
+LPCWSTR : Software\Microsoft\Notepad
+
+-----  MessageBoxW is called  ------ Wed Dec 22 20:22:20 2010
+
+HWND : 1
+
+LPCWSTR : The text in the Untitled file has changed.
+
+Do you want to save the changes?
+
+LPCWSTR : Notepad
+
+------DestroyWindow-------Wed Dec 22 20:22:22 2010
+
+HWND : 1
+
+------DestroyWindow-------Wed Dec 22 20:22:22 2010
+
+HWND : 1
+

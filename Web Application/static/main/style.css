@@ -1,0 +1,128 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+html{
+height: 100%;
+}
+
+body{
+background-color:#efefef;
+}
+
+.clear{
+    clear: both;
+}
+
+.menu{
+height:50px;
+background-color: #953345;
+}
+
+.wrapper{
+ background: #b5314a url(thesis-form.png) no-repeat top center;
+}
+
+.logo{
+	width:920px;
+	height:310px;
+	margin: 0 auto;
+}
+
+.row_one{
+    position: relative;
+    width:658px;
+    height:60px;
+    display:block;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+input#id_file{
+    cursor: default;
+    position:absolute;
+    border: 0px;
+    padding: 0px;
+    top:0px;
+    left: 0px;
+    font-size: 60px;
+    width: 580px;
+    height:60px;
+    
+    -moz-opacity:0 ;
+    filter:alpha(opacity:0);
+    opacity: 0;
+    z-index: 2 !important;
+}
+
+.fakeinput{	/* the wrapper div */
+	position:relative; 
+	display: block;
+	width:526px;
+        height:60px;
+        overflow: hidden;
+}
+
+div.fakefile{ /*fakefile wrapper*/
+	position:absolute;
+	top:5px;
+	height:60px;
+	padding:0px;
+	padding-left:18px;
+	background: transparent url(form-preffix.png) no-repeat top left;
+}
+
+html>body .fakefile{ /*fakefile wrapper*/
+	position:absolute;
+	top:5px;
+	height:60px;
+	padding:0px;
+	padding-left:18px;
+	background: transparent url(form-preffix.png) no-repeat top left;
+}
+
+.fakefile input{       
+	float:left;
+	border: none;
+	margin:0px;
+	height: 55px;
+	width: 506px;
+	background: transparent url(form-bg.png) repeat-x;
+}
+
+.browse{
+    cursor: pointer;
+    position: absolute;
+    top:0px;
+    right:0px;
+}
+
+input#submit_button{
+    position: relative;
+    float:right;
+    border: none;
+    text-indent: -9999px;
+    /* fix for ie */
+    font-size: 0; 
+    display:block;
+    line-height: 0;
+    /* fix for ie */
+    width:115px;
+    height:60px;
+    margin: 4px 0px 0px;
+    background: transparent url(submit.png) no-repeat;
+    cursor: pointer;
+    z-index: 8;
+}
+
+.footer{
+    font-size: 12px;
+    width:630px;
+    height: 38px;
+    margin: 0px auto;
+    margin-top: 110px;
+    color:#afafaf;
+}
+
+.footer_nav{
+    float: right;
+}
+
+

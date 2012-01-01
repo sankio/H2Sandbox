@@ -1,0 +1,32 @@
+body{
+	
+}
+
+.header{
+/*background: #b5314a url(img/header.png) repeat-x;*/
+background: #b5314a;
+margin: 0px auto;
+height:42px;
+}
+
+.logo{
+height:42px;
+width:150px;
+background: #efefef url(img/logo.png) top left;
+}
+
+#tree{
+	width:960px;
+	margin:0px auto;
+	margin-top: -160px;
+}
+
+.content{
+}
+
+#footer{}
+
+.x-tree-node table {
+  font: normal 11px arial, tahoma, helvetica, sans-serif;
+  line-height: 17px;
+}

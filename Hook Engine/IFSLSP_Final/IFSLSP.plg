@@ -1,0 +1,45 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: IFSLSP - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Barak\LOCALS~1\Temp\RSP2AA.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "IFSLSP_EXPORTS" /D "_PSDK_BLD" /Fp"Debug/IFSLSP.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\dev\Komodia\lsp\Original_sample_compiled\ifslsp\extension.cpp"
+"C:\dev\Komodia\lsp\Original_sample_compiled\ifslsp\lspguid.cpp"
+"C:\dev\Komodia\lsp\Original_sample_compiled\common\provider.cpp"
+"C:\dev\Komodia\lsp\Original_sample_compiled\ifslsp\sockinfo.cpp"
+"C:\dev\Komodia\lsp\Original_sample_compiled\ifslsp\spi.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Barak\LOCALS~1\Temp\RSP2AA.tmp" 
+Creating temporary file "C:\DOCUME~1\Barak\LOCALS~1\Temp\RSP2AB.tmp" with contents
+[
+sporder.lib ws2_32.lib rpcrt4.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"Debug/IFSLSP.pdb" /debug /machine:I386 /def:".\ifslsp.def" /out:"Debug/IFSLSP.dll" /implib:"Debug/IFSLSP.lib" /pdbtype:sept 
+.\Debug\extension.obj
+.\Debug\lspguid.obj
+.\Debug\provider.obj
+.\Debug\sockinfo.obj
+.\Debug\spi.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\Barak\LOCALS~1\Temp\RSP2AB.tmp"
+<h3>Output Window</h3>
+Compiling...
+extension.cpp
+lspguid.cpp
+provider.cpp
+sockinfo.cpp
+spi.cpp
+Linking...
+   Creating library Debug/IFSLSP.lib and object Debug/IFSLSP.exp
+
+
+
+<h3>Results</h3>
+IFSLSP.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,7 @@
+ <authors>
+        <author first="Fyodor" last="Dostoevsky" gender="m">
+            <book title="Crime and Punishment" published="1866" url="http://...">
+                Raskolnikov, a destitute and desperate former student...
+            </book>
+        </author>
+ </authors>   

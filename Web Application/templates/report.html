@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <title>H2SandBox | Analyze Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}ext-3.3/resources/css/ext-all.css" />
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}ext-3.3/resources/css/xtheme-gray.css" />
+    <script type="text/javascript" src="{{ STATIC_URL }}ext-3.3/adapter/ext/ext-base.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}ext-3.3/ext-all.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}IndentedTreeNodeUI.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}ext-3.3/examples/ux/XmlTreeLoader.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}ext-3.3/examples/ux/CenterLayout.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}ext-3.3/examples/ux/RowLayout.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}data/{{sha}}summary-data.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}data/{{sha}}file-data.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}data/{{sha}}reg-data.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}data/{{sha}}network-data.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}chart.js"></script>
+    <script type="text/javascript">
+        var sha = "{{sha}}";
+    </script>
+    <script type="text/javascript" src="{{ STATIC_URL }}loader.js"></script>    
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}style.css" />
+</head>
+<body>
+    <div class="content">    
+	<div id="tab"></div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
