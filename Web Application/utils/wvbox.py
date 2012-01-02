@@ -12,6 +12,9 @@ from vboxapi import VirtualBoxManager
 __author__ = "zozanh"
 __date__ = "$Apr 19, 2011 12:16:16 PM$"
 
+USERNAME = "h2sandbox"
+PASSWORD = "dynamix"
+
 def progressBar(ctx, p, wait=1000):
     """
     Checking the progress of the API calling
@@ -240,7 +243,7 @@ def calling(f, sha):
         'type':myManager.type,
         '_machlist': None,
         }
-    connect(ctx, ["http://localhost:18083/", "h2sandbox", "dynamix"])
+    connect(ctx, ["http://localhost:18083/", USERNAME, PASSWORD])
     oMachine = machineByName(ctx, "prethesis")
     if startVm(ctx, oMachine, "gui", f, sha):
         disconnect(ctx, ("h2sandbox",))
